@@ -1,0 +1,77 @@
+{
+  "categories": {
+    "OTS": [
+      "AWBILA-1-2-LINEIN:OTS:NEND:RCV",
+      "AWBILA-1-2-LINEOUT:OTS:NEND:TRMT",
+      "AWBILA-1-2-OSCSFP:OTS:FEND:RCV",
+      "AWBILA-1-2-OSCSFP:OTS:NEND:RCV",
+      "AWBILA-1-2-OSCSFP:OTS:NEND:TRMT",
+      "AWBILA-1-4-LINEIN:OTS:NEND:RCV",
+      "AWBILA-1-4-LINEOUT:OTS:NEND:TRMT",
+      "AWBILA-1-4-OSCSFP:OTS:FEND:RCV",
+      "AWBILA-1-4-OSCSFP:OTS:NEND:RCV",
+      "AWBILA-1-4-OSCSFP:OTS:NEND:TRMT"
+    ]
+  },
+  "generated_at": "2025-11-27T18:12:35Z",
+  "ne": "UECHHMCHHM1NA1A08801",
+  "roles": {
+    "osc": [
+      "AWBILA-1-2-OSCSFP:OTS:FEND:RCV",
+      "AWBILA-1-2-OSCSFP:OTS:NEND:RCV",
+      "AWBILA-1-2-OSCSFP:OTS:NEND:TRMT",
+      "AWBILA-1-4-OSCSFP:OTS:FEND:RCV",
+      "AWBILA-1-4-OSCSFP:OTS:NEND:RCV",
+      "AWBILA-1-4-OSCSFP:OTS:NEND:TRMT"
+    ],
+    "transponder": [
+      "AWBILA-1-2-LINEIN:OTS:NEND:RCV",
+      "AWBILA-1-2-LINEOUT:OTS:NEND:TRMT",
+      "AWBILA-1-4-LINEIN:OTS:NEND:RCV",
+      "AWBILA-1-4-LINEOUT:OTS:NEND:TRMT"
+    ]
+  },
+  "root": "./pm_store/NE=UECHHMCHHM1NA1A08801",
+  "tps": {
+    "AWBILA-1-2-LINEIN:OTS:NEND:RCV": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "AWBILA-1-2-LINEOUT:OTS:NEND:TRMT": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "AWBILA-1-2-OSCSFP:OTS:FEND:RCV": {
+      "category": "OTS",
+      "role": "osc"
+    },
+    "AWBILA-1-2-OSCSFP:OTS:NEND:RCV": {
+      "category": "OTS",
+      "role": "osc"
+    },
+    "AWBILA-1-2-OSCSFP:OTS:NEND:TRMT": {
+      "category": "OTS",
+      "role": "osc"
+    },
+    "AWBILA-1-4-LINEIN:OTS:NEND:RCV": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "AWBILA-1-4-LINEOUT:OTS:NEND:TRMT": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "AWBILA-1-4-OSCSFP:OTS:FEND:RCV": {
+      "category": "OTS",
+      "role": "osc"
+    },
+    "AWBILA-1-4-OSCSFP:OTS:NEND:RCV": {
+      "category": "OTS",
+      "role": "osc"
+    },
+    "AWBILA-1-4-OSCSFP:OTS:NEND:TRMT": {
+      "category": "OTS",
+      "role": "osc"
+    }
+  }
+}

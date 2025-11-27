@@ -1,0 +1,1671 @@
+{
+  "categories": {
+    "OCH": [
+      "OCH-4-3-C1:OTU4:NEND:RCV",
+      "OCH-4-3-C1:OTU4:NEND:TRMT",
+      "OCH-4-3-C2:OTU4:NEND:RCV",
+      "OCH-4-3-C2:OTU4:NEND:TRMT",
+      "OCH-4-3-C3:OTU4:NEND:RCV",
+      "OCH-4-3-C3:OTU4:NEND:TRMT",
+      "OCH-4-3-C4:OTU4:NEND:RCV",
+      "OCH-4-3-C4:OTU4:NEND:TRMT",
+      "OCH-4-5-C1:OTU4:NEND:RCV",
+      "OCH-4-5-C1:OTU4:NEND:TRMT",
+      "OCH-4-5-C2:OTU4:NEND:RCV",
+      "OCH-4-5-C2:OTU4:NEND:TRMT",
+      "OCH-4-5-C3:OTU4:NEND:RCV",
+      "OCH-4-5-C3:OTU4:NEND:TRMT",
+      "OCH-4-9-C1:OTU4:NEND:RCV",
+      "OCH-4-9-C1:OTU4:NEND:TRMT",
+      "OCH-4-9-C3:OTU4:NEND:RCV",
+      "OCH-4-9-C3:OTU4:NEND:TRMT",
+      "OCH-4-9-C4:OTU4:NEND:RCV",
+      "OCH-4-9-C4:OTU4:NEND:TRMT",
+      "OCH-4-9-C5:OTU4:NEND:RCV",
+      "OCH-4-9-C5:OTU4:NEND:TRMT",
+      "PORT-2-3-LINEIN-9172.500:OCH:NEND:RCV",
+      "PORT-2-3-LINEOUT-9172.500:OCH:NEND:TRMT",
+      "PORT-2-5-LINEIN-9142.500:OCH:NEND:RCV",
+      "PORT-2-5-LINEIN-9152.500:OCH:NEND:RCV",
+      "PORT-2-5-LINEIN-9182.500:OCH:NEND:RCV",
+      "PORT-2-5-LINEIN-9192.500:OCH:NEND:RCV",
+      "PORT-2-5-LINEOUT-9142.500:OCH:NEND:TRMT",
+      "PORT-2-5-LINEOUT-9152.500:OCH:NEND:TRMT",
+      "PORT-2-5-LINEOUT-9182.500:OCH:NEND:TRMT",
+      "PORT-2-5-LINEOUT-9192.500:OCH:NEND:TRMT"
+    ],
+    "ODU": [
+      "ODUFLEX-5-1-1:ODUFLEX:FEND:RCV",
+      "ODUFLEX-5-1-1:ODUFLEX:NEND:RCV",
+      "ODUFLEX-5-1-2:ODUFLEX:FEND:RCV",
+      "ODUFLEX-5-1-2:ODUFLEX:NEND:RCV",
+      "ODUFLEX-5-1-3:ODUFLEX:FEND:RCV",
+      "ODUFLEX-5-1-3:ODUFLEX:NEND:RCV",
+      "ODUFLEX-5-28-5:ODUFLEX:FEND:RCV",
+      "ODUFLEX-5-28-5:ODUFLEX:NEND:RCV",
+      "ODUFLEX-5-28-6:ODUFLEX:FEND:RCV",
+      "ODUFLEX-5-28-6:ODUFLEX:NEND:RCV",
+      "ODUFLEX-5-28-7:ODUFLEX:FEND:RCV",
+      "ODUFLEX-5-28-7:ODUFLEX:NEND:RCV"
+    ],
+    "OTHER": [
+      "PORT-5-1-1:FlexClientRate:NEND:RCV",
+      "PORT-5-1-1:FlexClientRate:NEND:TRMT",
+      "PORT-5-1-2:FlexClientRate:NEND:RCV",
+      "PORT-5-1-2:FlexClientRate:NEND:TRMT",
+      "PORT-5-1-3:FlexClientRate:NEND:RCV",
+      "PORT-5-1-3:FlexClientRate:NEND:TRMT",
+      "PORT-5-28-5:FlexClientRate:NEND:RCV",
+      "PORT-5-28-5:FlexClientRate:NEND:TRMT",
+      "PORT-5-28-6:FlexClientRate:NEND:RCV",
+      "PORT-5-28-6:FlexClientRate:NEND:TRMT",
+      "PORT-5-28-7:FlexClientRate:NEND:RCV",
+      "PORT-5-28-7:FlexClientRate:NEND:TRMT"
+    ],
+    "OTS": [
+      "OTSI-4-3-L1:OTSI:NEND:RCV",
+      "OTSI-4-3-L1:OTSI:NEND:TRMT",
+      "OTSI-4-5-L1:OTSI:NEND:RCV",
+      "OTSI-4-5-L1:OTSI:NEND:TRMT",
+      "OTSI-4-9-L1:OTSI:NEND:RCV",
+      "OTSI-4-9-L1:OTSI:NEND:TRMT",
+      "OTSI-5-23-1:OTSI:NEND:RCV",
+      "OTSI-5-23-1:OTSI:NEND:TRMT",
+      "OTSI-5-23-2:OTSI:NEND:RCV",
+      "OTSI-5-23-2:OTSI:NEND:TRMT",
+      "OTSI-5-24-1:OTSI:NEND:RCV",
+      "OTSI-5-24-1:OTSI:NEND:TRMT",
+      "OTSI-5-24-2:OTSI:NEND:RCV",
+      "OTSI-5-24-2:OTSI:NEND:TRMT",
+      "OTSI-5-26-1:OTSI:NEND:RCV",
+      "OTSI-5-26-1:OTSI:NEND:TRMT",
+      "OTSI-5-26-2:OTSI:NEND:RCV",
+      "OTSI-5-26-2:OTSI:NEND:TRMT",
+      "OTSI-5-4-1:OTSI:NEND:RCV",
+      "OTSI-5-4-1:OTSI:NEND:TRMT",
+      "OTSI-5-4-2:OTSI:NEND:RCV",
+      "OTSI-5-4-2:OTSI:NEND:TRMT",
+      "OTSI-5-5-1:OTSI:NEND:RCV",
+      "OTSI-5-5-1:OTSI:NEND:TRMT",
+      "OTSI-5-5-2:OTSI:NEND:RCV",
+      "OTSI-5-5-2:OTSI:NEND:TRMT",
+      "PORT-1-2-LINE1OUT:OTS:NEND:TRMT",
+      "PORT-1-2-OSCSFP1:OTS:FEND:RCV",
+      "PORT-1-2-OSCSFP1:OTS:NEND:RCV",
+      "PORT-1-2-OSCSFP1:OTS:NEND:TRMT",
+      "PORT-1-2-SIGC1IN:OTS:NEND:RCV",
+      "PORT-1-2-SIGC2IN:OTS:NEND:RCV",
+      "PORT-1-2-SIGL1IN:OTS:NEND:RCV",
+      "PORT-1-2-SIGL2IN:OTS:NEND:RCV",
+      "PORT-1-3-LINEIN:OTS:NEND:RCV",
+      "PORT-1-3-LINEOUT:OTS:NEND:TRMT",
+      "PORT-2-2-LINE1OUT:OTS:NEND:TRMT",
+      "PORT-2-2-OSCSFP1:OTS:FEND:RCV",
+      "PORT-2-2-OSCSFP1:OTS:NEND:RCV",
+      "PORT-2-2-OSCSFP1:OTS:NEND:TRMT",
+      "PORT-2-2-SIGC1IN:OTS:NEND:RCV",
+      "PORT-2-2-SIGC2IN:OTS:NEND:RCV",
+      "PORT-2-2-SIGL1IN:OTS:NEND:RCV",
+      "PORT-2-2-SIGL2IN:OTS:NEND:RCV",
+      "PORT-2-3-LINEIN:OTS:NEND:RCV",
+      "PORT-2-3-LINEOUT:OTS:NEND:TRMT",
+      "PORT-2-4-LINE1OUT:OTS:NEND:TRMT",
+      "PORT-2-4-OSCSFP1:OTS:FEND:RCV",
+      "PORT-2-4-OSCSFP1:OTS:NEND:RCV",
+      "PORT-2-4-OSCSFP1:OTS:NEND:TRMT",
+      "PORT-2-4-SIGC1IN:OTS:NEND:RCV",
+      "PORT-2-4-SIGC2IN:OTS:NEND:RCV",
+      "PORT-2-4-SIGL1IN:OTS:NEND:RCV",
+      "PORT-2-4-SIGL2IN:OTS:NEND:RCV",
+      "PORT-2-5-LINEIN:OTS:NEND:RCV",
+      "PORT-2-5-LINEOUT:OTS:NEND:TRMT",
+      "PORT-4-13-L1:OTSI:NEND:RCV",
+      "PORT-4-13-L1:OTSI:NEND:TRMT",
+      "PORT-5-6-1:OTSI:NEND:RCV",
+      "PORT-5-6-1:OTSI:NEND:TRMT",
+      "PORT-5-6-2:OTSI:NEND:RCV",
+      "PORT-5-6-2:OTSI:NEND:TRMT"
+    ],
+    "OTU": [
+      "OTU-4-3-1:OTU4:FEND:RCV",
+      "OTU-4-3-1:OTU4:NEND:RCV",
+      "OTU-4-3-2:OTU4:FEND:RCV",
+      "OTU-4-3-2:OTU4:NEND:RCV",
+      "OTU-4-3-3:OTU4:FEND:RCV",
+      "OTU-4-3-3:OTU4:NEND:RCV",
+      "OTU-4-3-4:OTU4:FEND:RCV",
+      "OTU-4-3-4:OTU4:NEND:RCV",
+      "OTU-4-3-C1-1:OTU4:FEND:RCV",
+      "OTU-4-3-C1-1:OTU4:NEND:RCV",
+      "OTU-4-3-C2-1:OTU4:FEND:RCV",
+      "OTU-4-3-C2-1:OTU4:NEND:RCV",
+      "OTU-4-3-C3-1:OTU4:FEND:RCV",
+      "OTU-4-3-C3-1:OTU4:NEND:RCV",
+      "OTU-4-3-C4-1:OTU4:FEND:RCV",
+      "OTU-4-3-C4-1:OTU4:NEND:RCV",
+      "OTU-4-5-1:OTU4:FEND:RCV",
+      "OTU-4-5-1:OTU4:NEND:RCV",
+      "OTU-4-5-2:OTU4:FEND:RCV",
+      "OTU-4-5-2:OTU4:NEND:RCV",
+      "OTU-4-5-3:OTU4:FEND:RCV",
+      "OTU-4-5-3:OTU4:NEND:RCV",
+      "OTU-4-5-4:OTU4:FEND:RCV",
+      "OTU-4-5-4:OTU4:NEND:RCV",
+      "OTU-4-5-C1-1:OTU4:FEND:RCV",
+      "OTU-4-5-C1-1:OTU4:NEND:RCV",
+      "OTU-4-5-C2-1:OTU4:FEND:RCV",
+      "OTU-4-5-C2-1:OTU4:NEND:RCV",
+      "OTU-4-5-C3-1:OTU4:FEND:RCV",
+      "OTU-4-5-C3-1:OTU4:NEND:RCV",
+      "OTU-4-9-1:OTU4:FEND:RCV",
+      "OTU-4-9-1:OTU4:NEND:RCV",
+      "OTU-4-9-2:OTU4:FEND:RCV",
+      "OTU-4-9-2:OTU4:NEND:RCV",
+      "OTU-4-9-3:OTU4:FEND:RCV",
+      "OTU-4-9-3:OTU4:NEND:RCV",
+      "OTU-4-9-4:OTU4:FEND:RCV",
+      "OTU-4-9-4:OTU4:NEND:RCV",
+      "OTU-4-9-C1-1:OTU4:FEND:RCV",
+      "OTU-4-9-C1-1:OTU4:NEND:RCV",
+      "OTU-4-9-C3-1:OTU4:FEND:RCV",
+      "OTU-4-9-C3-1:OTU4:NEND:RCV",
+      "OTU-4-9-C4-1:OTU4:FEND:RCV",
+      "OTU-4-9-C4-1:OTU4:NEND:RCV",
+      "OTU-4-9-C5-1:OTU4:FEND:RCV",
+      "OTU-4-9-C5-1:OTU4:NEND:RCV",
+      "OTU-5-23-1:OTU4:FEND:RCV",
+      "OTU-5-23-1:OTU4:NEND:RCV",
+      "OTU-5-23-2:OTU4:FEND:RCV",
+      "OTU-5-23-2:OTU4:NEND:RCV",
+      "OTU-5-23-3:OTU4:FEND:RCV",
+      "OTU-5-23-3:OTU4:NEND:RCV",
+      "OTU-5-23-4:OTU4:FEND:RCV",
+      "OTU-5-23-4:OTU4:NEND:RCV",
+      "OTU-5-23-6:OTU4:FEND:RCV",
+      "OTU-5-23-6:OTU4:NEND:RCV",
+      "OTU-5-23-7:OTU4:FEND:RCV",
+      "OTU-5-23-7:OTU4:NEND:RCV",
+      "OTU-5-23-8:OTU4:FEND:RCV",
+      "OTU-5-23-8:OTU4:NEND:RCV",
+      "OTU-5-23-9:OTU4:FEND:RCV",
+      "OTU-5-23-9:OTU4:NEND:RCV",
+      "OTU-5-24-1:OTU4:FEND:RCV",
+      "OTU-5-24-1:OTU4:NEND:RCV",
+      "OTU-5-24-2:OTU4:FEND:RCV",
+      "OTU-5-24-2:OTU4:NEND:RCV",
+      "OTU-5-24-3:OTU4:FEND:RCV",
+      "OTU-5-24-3:OTU4:NEND:RCV",
+      "OTU-5-24-4:OTU4:FEND:RCV",
+      "OTU-5-24-4:OTU4:NEND:RCV",
+      "OTU-5-24-6:OTU4:FEND:RCV",
+      "OTU-5-24-6:OTU4:NEND:RCV",
+      "OTU-5-24-7:OTU4:FEND:RCV",
+      "OTU-5-24-7:OTU4:NEND:RCV",
+      "OTU-5-24-8:OTU4:FEND:RCV",
+      "OTU-5-24-8:OTU4:NEND:RCV",
+      "OTU-5-24-9:OTU4:FEND:RCV",
+      "OTU-5-24-9:OTU4:NEND:RCV",
+      "OTU-5-26-1:OTU4:FEND:RCV",
+      "OTU-5-26-1:OTU4:NEND:RCV",
+      "OTU-5-26-2:OTU4:FEND:RCV",
+      "OTU-5-26-2:OTU4:NEND:RCV",
+      "OTU-5-26-3:OTU4:FEND:RCV",
+      "OTU-5-26-3:OTU4:NEND:RCV",
+      "OTU-5-26-4:OTU4:FEND:RCV",
+      "OTU-5-26-4:OTU4:NEND:RCV",
+      "OTU-5-26-6:OTU4:FEND:RCV",
+      "OTU-5-26-6:OTU4:NEND:RCV",
+      "OTU-5-26-7:OTU4:FEND:RCV",
+      "OTU-5-26-7:OTU4:NEND:RCV",
+      "OTU-5-26-8:OTU4:FEND:RCV",
+      "OTU-5-26-8:OTU4:NEND:RCV",
+      "OTU-5-26-9:OTU4:FEND:RCV",
+      "OTU-5-26-9:OTU4:NEND:RCV",
+      "OTU-5-4-1:OTU4:FEND:RCV",
+      "OTU-5-4-1:OTU4:NEND:RCV",
+      "OTU-5-4-2:OTU4:FEND:RCV",
+      "OTU-5-4-2:OTU4:NEND:RCV",
+      "OTU-5-4-3:OTU4:FEND:RCV",
+      "OTU-5-4-3:OTU4:NEND:RCV",
+      "OTU-5-4-4:OTU4:FEND:RCV",
+      "OTU-5-4-4:OTU4:NEND:RCV",
+      "OTU-5-4-6:OTU4:FEND:RCV",
+      "OTU-5-4-6:OTU4:NEND:RCV",
+      "OTU-5-4-7:OTU4:FEND:RCV",
+      "OTU-5-4-7:OTU4:NEND:RCV",
+      "OTU-5-4-8:OTU4:FEND:RCV",
+      "OTU-5-4-8:OTU4:NEND:RCV",
+      "OTU-5-4-9:OTU4:FEND:RCV",
+      "OTU-5-4-9:OTU4:NEND:RCV",
+      "OTU-5-5-1:OTU4:FEND:RCV",
+      "OTU-5-5-1:OTU4:NEND:RCV",
+      "OTU-5-5-2:OTU4:FEND:RCV",
+      "OTU-5-5-2:OTU4:NEND:RCV",
+      "OTU-5-5-3:OTU4:FEND:RCV",
+      "OTU-5-5-3:OTU4:NEND:RCV",
+      "OTU-5-5-4:OTU4:FEND:RCV",
+      "OTU-5-5-4:OTU4:NEND:RCV",
+      "OTU-5-5-6:OTU4:FEND:RCV",
+      "OTU-5-5-6:OTU4:NEND:RCV",
+      "OTU-5-5-7:OTU4:FEND:RCV",
+      "OTU-5-5-7:OTU4:NEND:RCV",
+      "OTU-5-5-8:OTU4:FEND:RCV",
+      "OTU-5-5-8:OTU4:NEND:RCV",
+      "OTU-5-5-9:OTU4:FEND:RCV",
+      "OTU-5-5-9:OTU4:NEND:RCV",
+      "OTUODU4-4-3-C1-1-1:ODU4:FEND:RCV",
+      "OTUODU4-4-3-C1-1-1:ODU4:NEND:RCV",
+      "OTUODU4-4-3-C2-1-1:ODU4:FEND:RCV",
+      "OTUODU4-4-3-C2-1-1:ODU4:NEND:RCV",
+      "OTUODU4-4-3-C3-1-1:ODU4:FEND:RCV",
+      "OTUODU4-4-3-C3-1-1:ODU4:NEND:RCV",
+      "OTUODU4-4-3-C4-1-1:ODU4:FEND:RCV",
+      "OTUODU4-4-3-C4-1-1:ODU4:NEND:RCV",
+      "OTUODU4-4-5-C1-1-1:ODU4:FEND:RCV",
+      "OTUODU4-4-5-C1-1-1:ODU4:NEND:RCV",
+      "OTUODU4-4-5-C2-1-1:ODU4:FEND:RCV",
+      "OTUODU4-4-5-C2-1-1:ODU4:NEND:RCV",
+      "OTUODU4-4-5-C3-1-1:ODU4:FEND:RCV",
+      "OTUODU4-4-5-C3-1-1:ODU4:NEND:RCV",
+      "OTUODU4-4-9-C1-1-1:ODU4:FEND:RCV",
+      "OTUODU4-4-9-C1-1-1:ODU4:NEND:RCV",
+      "OTUODU4-4-9-C3-1-1:ODU4:FEND:RCV",
+      "OTUODU4-4-9-C3-1-1:ODU4:NEND:RCV",
+      "OTUODU4-4-9-C4-1-1:ODU4:FEND:RCV",
+      "OTUODU4-4-9-C4-1-1:ODU4:NEND:RCV",
+      "OTUODU4-4-9-C5-1-1:ODU4:FEND:RCV",
+      "OTUODU4-4-9-C5-1-1:ODU4:NEND:RCV",
+      "OTUODU4TCM-5-23-1-6-BM:odu4tcm:FEND:RCV",
+      "OTUODU4TCM-5-23-1-6-BM:odu4tcm:NEND:RCV",
+      "OTUODU4TCM-5-23-6-6-BM:odu4tcm:FEND:RCV",
+      "OTUODU4TCM-5-23-6-6-BM:odu4tcm:NEND:RCV",
+      "OTUODU4TCM-5-26-1-6-BM:odu4tcm:FEND:RCV",
+      "OTUODU4TCM-5-26-1-6-BM:odu4tcm:NEND:RCV",
+      "OTUODU4TCM-5-26-6-6-BM:odu4tcm:FEND:RCV",
+      "OTUODU4TCM-5-26-6-6-BM:odu4tcm:NEND:RCV"
+    ]
+  },
+  "generated_at": "2025-11-27T18:11:55Z",
+  "ne": "KAMGLRKNKD2SA2T32801",
+  "roles": {
+    "osc": [
+      "PORT-1-2-OSCSFP1:OTS:FEND:RCV",
+      "PORT-1-2-OSCSFP1:OTS:NEND:RCV",
+      "PORT-1-2-OSCSFP1:OTS:NEND:TRMT",
+      "PORT-2-2-OSCSFP1:OTS:FEND:RCV",
+      "PORT-2-2-OSCSFP1:OTS:NEND:RCV",
+      "PORT-2-2-OSCSFP1:OTS:NEND:TRMT",
+      "PORT-2-4-OSCSFP1:OTS:FEND:RCV",
+      "PORT-2-4-OSCSFP1:OTS:NEND:RCV",
+      "PORT-2-4-OSCSFP1:OTS:NEND:TRMT"
+    ],
+    "transponder": [
+      "OCH-4-3-C1:OTU4:NEND:RCV",
+      "OCH-4-3-C1:OTU4:NEND:TRMT",
+      "OCH-4-3-C2:OTU4:NEND:RCV",
+      "OCH-4-3-C2:OTU4:NEND:TRMT",
+      "OCH-4-3-C3:OTU4:NEND:RCV",
+      "OCH-4-3-C3:OTU4:NEND:TRMT",
+      "OCH-4-3-C4:OTU4:NEND:RCV",
+      "OCH-4-3-C4:OTU4:NEND:TRMT",
+      "OCH-4-5-C1:OTU4:NEND:RCV",
+      "OCH-4-5-C1:OTU4:NEND:TRMT",
+      "OCH-4-5-C2:OTU4:NEND:RCV",
+      "OCH-4-5-C2:OTU4:NEND:TRMT",
+      "OCH-4-5-C3:OTU4:NEND:RCV",
+      "OCH-4-5-C3:OTU4:NEND:TRMT",
+      "OCH-4-9-C1:OTU4:NEND:RCV",
+      "OCH-4-9-C1:OTU4:NEND:TRMT",
+      "OCH-4-9-C3:OTU4:NEND:RCV",
+      "OCH-4-9-C3:OTU4:NEND:TRMT",
+      "OCH-4-9-C4:OTU4:NEND:RCV",
+      "OCH-4-9-C4:OTU4:NEND:TRMT",
+      "OCH-4-9-C5:OTU4:NEND:RCV",
+      "OCH-4-9-C5:OTU4:NEND:TRMT",
+      "ODUFLEX-5-1-1:ODUFLEX:FEND:RCV",
+      "ODUFLEX-5-1-1:ODUFLEX:NEND:RCV",
+      "ODUFLEX-5-1-2:ODUFLEX:FEND:RCV",
+      "ODUFLEX-5-1-2:ODUFLEX:NEND:RCV",
+      "ODUFLEX-5-1-3:ODUFLEX:FEND:RCV",
+      "ODUFLEX-5-1-3:ODUFLEX:NEND:RCV",
+      "ODUFLEX-5-28-5:ODUFLEX:FEND:RCV",
+      "ODUFLEX-5-28-5:ODUFLEX:NEND:RCV",
+      "ODUFLEX-5-28-6:ODUFLEX:FEND:RCV",
+      "ODUFLEX-5-28-6:ODUFLEX:NEND:RCV",
+      "ODUFLEX-5-28-7:ODUFLEX:FEND:RCV",
+      "ODUFLEX-5-28-7:ODUFLEX:NEND:RCV",
+      "OTSI-4-3-L1:OTSI:NEND:RCV",
+      "OTSI-4-3-L1:OTSI:NEND:TRMT",
+      "OTSI-4-5-L1:OTSI:NEND:RCV",
+      "OTSI-4-5-L1:OTSI:NEND:TRMT",
+      "OTSI-4-9-L1:OTSI:NEND:RCV",
+      "OTSI-4-9-L1:OTSI:NEND:TRMT",
+      "OTSI-5-23-1:OTSI:NEND:RCV",
+      "OTSI-5-23-1:OTSI:NEND:TRMT",
+      "OTSI-5-23-2:OTSI:NEND:RCV",
+      "OTSI-5-23-2:OTSI:NEND:TRMT",
+      "OTSI-5-24-1:OTSI:NEND:RCV",
+      "OTSI-5-24-1:OTSI:NEND:TRMT",
+      "OTSI-5-24-2:OTSI:NEND:RCV",
+      "OTSI-5-24-2:OTSI:NEND:TRMT",
+      "OTSI-5-26-1:OTSI:NEND:RCV",
+      "OTSI-5-26-1:OTSI:NEND:TRMT",
+      "OTSI-5-26-2:OTSI:NEND:RCV",
+      "OTSI-5-26-2:OTSI:NEND:TRMT",
+      "OTSI-5-4-1:OTSI:NEND:RCV",
+      "OTSI-5-4-1:OTSI:NEND:TRMT",
+      "OTSI-5-4-2:OTSI:NEND:RCV",
+      "OTSI-5-4-2:OTSI:NEND:TRMT",
+      "OTSI-5-5-1:OTSI:NEND:RCV",
+      "OTSI-5-5-1:OTSI:NEND:TRMT",
+      "OTSI-5-5-2:OTSI:NEND:RCV",
+      "OTSI-5-5-2:OTSI:NEND:TRMT",
+      "OTU-4-3-1:OTU4:FEND:RCV",
+      "OTU-4-3-1:OTU4:NEND:RCV",
+      "OTU-4-3-2:OTU4:FEND:RCV",
+      "OTU-4-3-2:OTU4:NEND:RCV",
+      "OTU-4-3-3:OTU4:FEND:RCV",
+      "OTU-4-3-3:OTU4:NEND:RCV",
+      "OTU-4-3-4:OTU4:FEND:RCV",
+      "OTU-4-3-4:OTU4:NEND:RCV",
+      "OTU-4-3-C1-1:OTU4:FEND:RCV",
+      "OTU-4-3-C1-1:OTU4:NEND:RCV",
+      "OTU-4-3-C2-1:OTU4:FEND:RCV",
+      "OTU-4-3-C2-1:OTU4:NEND:RCV",
+      "OTU-4-3-C3-1:OTU4:FEND:RCV",
+      "OTU-4-3-C3-1:OTU4:NEND:RCV",
+      "OTU-4-3-C4-1:OTU4:FEND:RCV",
+      "OTU-4-3-C4-1:OTU4:NEND:RCV",
+      "OTU-4-5-1:OTU4:FEND:RCV",
+      "OTU-4-5-1:OTU4:NEND:RCV",
+      "OTU-4-5-2:OTU4:FEND:RCV",
+      "OTU-4-5-2:OTU4:NEND:RCV",
+      "OTU-4-5-3:OTU4:FEND:RCV",
+      "OTU-4-5-3:OTU4:NEND:RCV",
+      "OTU-4-5-4:OTU4:FEND:RCV",
+      "OTU-4-5-4:OTU4:NEND:RCV",
+      "OTU-4-5-C1-1:OTU4:FEND:RCV",
+      "OTU-4-5-C1-1:OTU4:NEND:RCV",
+      "OTU-4-5-C2-1:OTU4:FEND:RCV",
+      "OTU-4-5-C2-1:OTU4:NEND:RCV",
+      "OTU-4-5-C3-1:OTU4:FEND:RCV",
+      "OTU-4-5-C3-1:OTU4:NEND:RCV",
+      "OTU-4-9-1:OTU4:FEND:RCV",
+      "OTU-4-9-1:OTU4:NEND:RCV",
+      "OTU-4-9-2:OTU4:FEND:RCV",
+      "OTU-4-9-2:OTU4:NEND:RCV",
+      "OTU-4-9-3:OTU4:FEND:RCV",
+      "OTU-4-9-3:OTU4:NEND:RCV",
+      "OTU-4-9-4:OTU4:FEND:RCV",
+      "OTU-4-9-4:OTU4:NEND:RCV",
+      "OTU-4-9-C1-1:OTU4:FEND:RCV",
+      "OTU-4-9-C1-1:OTU4:NEND:RCV",
+      "OTU-4-9-C3-1:OTU4:FEND:RCV",
+      "OTU-4-9-C3-1:OTU4:NEND:RCV",
+      "OTU-4-9-C4-1:OTU4:FEND:RCV",
+      "OTU-4-9-C4-1:OTU4:NEND:RCV",
+      "OTU-4-9-C5-1:OTU4:FEND:RCV",
+      "OTU-4-9-C5-1:OTU4:NEND:RCV",
+      "OTU-5-23-1:OTU4:FEND:RCV",
+      "OTU-5-23-1:OTU4:NEND:RCV",
+      "OTU-5-23-2:OTU4:FEND:RCV",
+      "OTU-5-23-2:OTU4:NEND:RCV",
+      "OTU-5-23-3:OTU4:FEND:RCV",
+      "OTU-5-23-3:OTU4:NEND:RCV",
+      "OTU-5-23-4:OTU4:FEND:RCV",
+      "OTU-5-23-4:OTU4:NEND:RCV",
+      "OTU-5-23-6:OTU4:FEND:RCV",
+      "OTU-5-23-6:OTU4:NEND:RCV",
+      "OTU-5-23-7:OTU4:FEND:RCV",
+      "OTU-5-23-7:OTU4:NEND:RCV",
+      "OTU-5-23-8:OTU4:FEND:RCV",
+      "OTU-5-23-8:OTU4:NEND:RCV",
+      "OTU-5-23-9:OTU4:FEND:RCV",
+      "OTU-5-23-9:OTU4:NEND:RCV",
+      "OTU-5-24-1:OTU4:FEND:RCV",
+      "OTU-5-24-1:OTU4:NEND:RCV",
+      "OTU-5-24-2:OTU4:FEND:RCV",
+      "OTU-5-24-2:OTU4:NEND:RCV",
+      "OTU-5-24-3:OTU4:FEND:RCV",
+      "OTU-5-24-3:OTU4:NEND:RCV",
+      "OTU-5-24-4:OTU4:FEND:RCV",
+      "OTU-5-24-4:OTU4:NEND:RCV",
+      "OTU-5-24-6:OTU4:FEND:RCV",
+      "OTU-5-24-6:OTU4:NEND:RCV",
+      "OTU-5-24-7:OTU4:FEND:RCV",
+      "OTU-5-24-7:OTU4:NEND:RCV",
+      "OTU-5-24-8:OTU4:FEND:RCV",
+      "OTU-5-24-8:OTU4:NEND:RCV",
+      "OTU-5-24-9:OTU4:FEND:RCV",
+      "OTU-5-24-9:OTU4:NEND:RCV",
+      "OTU-5-26-1:OTU4:FEND:RCV",
+      "OTU-5-26-1:OTU4:NEND:RCV",
+      "OTU-5-26-2:OTU4:FEND:RCV",
+      "OTU-5-26-2:OTU4:NEND:RCV",
+      "OTU-5-26-3:OTU4:FEND:RCV",
+      "OTU-5-26-3:OTU4:NEND:RCV",
+      "OTU-5-26-4:OTU4:FEND:RCV",
+      "OTU-5-26-4:OTU4:NEND:RCV",
+      "OTU-5-26-6:OTU4:FEND:RCV",
+      "OTU-5-26-6:OTU4:NEND:RCV",
+      "OTU-5-26-7:OTU4:FEND:RCV",
+      "OTU-5-26-7:OTU4:NEND:RCV",
+      "OTU-5-26-8:OTU4:FEND:RCV",
+      "OTU-5-26-8:OTU4:NEND:RCV",
+      "OTU-5-26-9:OTU4:FEND:RCV",
+      "OTU-5-26-9:OTU4:NEND:RCV",
+      "OTU-5-4-1:OTU4:FEND:RCV",
+      "OTU-5-4-1:OTU4:NEND:RCV",
+      "OTU-5-4-2:OTU4:FEND:RCV",
+      "OTU-5-4-2:OTU4:NEND:RCV",
+      "OTU-5-4-3:OTU4:FEND:RCV",
+      "OTU-5-4-3:OTU4:NEND:RCV",
+      "OTU-5-4-4:OTU4:FEND:RCV",
+      "OTU-5-4-4:OTU4:NEND:RCV",
+      "OTU-5-4-6:OTU4:FEND:RCV",
+      "OTU-5-4-6:OTU4:NEND:RCV",
+      "OTU-5-4-7:OTU4:FEND:RCV",
+      "OTU-5-4-7:OTU4:NEND:RCV",
+      "OTU-5-4-8:OTU4:FEND:RCV",
+      "OTU-5-4-8:OTU4:NEND:RCV",
+      "OTU-5-4-9:OTU4:FEND:RCV",
+      "OTU-5-4-9:OTU4:NEND:RCV",
+      "OTU-5-5-1:OTU4:FEND:RCV",
+      "OTU-5-5-1:OTU4:NEND:RCV",
+      "OTU-5-5-2:OTU4:FEND:RCV",
+      "OTU-5-5-2:OTU4:NEND:RCV",
+      "OTU-5-5-3:OTU4:FEND:RCV",
+      "OTU-5-5-3:OTU4:NEND:RCV",
+      "OTU-5-5-4:OTU4:FEND:RCV",
+      "OTU-5-5-4:OTU4:NEND:RCV",
+      "OTU-5-5-6:OTU4:FEND:RCV",
+      "OTU-5-5-6:OTU4:NEND:RCV",
+      "OTU-5-5-7:OTU4:FEND:RCV",
+      "OTU-5-5-7:OTU4:NEND:RCV",
+      "OTU-5-5-8:OTU4:FEND:RCV",
+      "OTU-5-5-8:OTU4:NEND:RCV",
+      "OTU-5-5-9:OTU4:FEND:RCV",
+      "OTU-5-5-9:OTU4:NEND:RCV",
+      "OTUODU4-4-3-C1-1-1:ODU4:FEND:RCV",
+      "OTUODU4-4-3-C1-1-1:ODU4:NEND:RCV",
+      "OTUODU4-4-3-C2-1-1:ODU4:FEND:RCV",
+      "OTUODU4-4-3-C2-1-1:ODU4:NEND:RCV",
+      "OTUODU4-4-3-C3-1-1:ODU4:FEND:RCV",
+      "OTUODU4-4-3-C3-1-1:ODU4:NEND:RCV",
+      "OTUODU4-4-3-C4-1-1:ODU4:FEND:RCV",
+      "OTUODU4-4-3-C4-1-1:ODU4:NEND:RCV",
+      "OTUODU4-4-5-C1-1-1:ODU4:FEND:RCV",
+      "OTUODU4-4-5-C1-1-1:ODU4:NEND:RCV",
+      "OTUODU4-4-5-C2-1-1:ODU4:FEND:RCV",
+      "OTUODU4-4-5-C2-1-1:ODU4:NEND:RCV",
+      "OTUODU4-4-5-C3-1-1:ODU4:FEND:RCV",
+      "OTUODU4-4-5-C3-1-1:ODU4:NEND:RCV",
+      "OTUODU4-4-9-C1-1-1:ODU4:FEND:RCV",
+      "OTUODU4-4-9-C1-1-1:ODU4:NEND:RCV",
+      "OTUODU4-4-9-C3-1-1:ODU4:FEND:RCV",
+      "OTUODU4-4-9-C3-1-1:ODU4:NEND:RCV",
+      "OTUODU4-4-9-C4-1-1:ODU4:FEND:RCV",
+      "OTUODU4-4-9-C4-1-1:ODU4:NEND:RCV",
+      "OTUODU4-4-9-C5-1-1:ODU4:FEND:RCV",
+      "OTUODU4-4-9-C5-1-1:ODU4:NEND:RCV",
+      "OTUODU4TCM-5-23-1-6-BM:odu4tcm:FEND:RCV",
+      "OTUODU4TCM-5-23-1-6-BM:odu4tcm:NEND:RCV",
+      "OTUODU4TCM-5-23-6-6-BM:odu4tcm:FEND:RCV",
+      "OTUODU4TCM-5-23-6-6-BM:odu4tcm:NEND:RCV",
+      "OTUODU4TCM-5-26-1-6-BM:odu4tcm:FEND:RCV",
+      "OTUODU4TCM-5-26-1-6-BM:odu4tcm:NEND:RCV",
+      "OTUODU4TCM-5-26-6-6-BM:odu4tcm:FEND:RCV",
+      "OTUODU4TCM-5-26-6-6-BM:odu4tcm:NEND:RCV",
+      "PORT-1-2-LINE1OUT:OTS:NEND:TRMT",
+      "PORT-1-2-SIGC1IN:OTS:NEND:RCV",
+      "PORT-1-2-SIGC2IN:OTS:NEND:RCV",
+      "PORT-1-2-SIGL1IN:OTS:NEND:RCV",
+      "PORT-1-2-SIGL2IN:OTS:NEND:RCV",
+      "PORT-1-3-LINEIN:OTS:NEND:RCV",
+      "PORT-1-3-LINEOUT:OTS:NEND:TRMT",
+      "PORT-2-2-LINE1OUT:OTS:NEND:TRMT",
+      "PORT-2-2-SIGC1IN:OTS:NEND:RCV",
+      "PORT-2-2-SIGC2IN:OTS:NEND:RCV",
+      "PORT-2-2-SIGL1IN:OTS:NEND:RCV",
+      "PORT-2-2-SIGL2IN:OTS:NEND:RCV",
+      "PORT-2-3-LINEIN-9172.500:OCH:NEND:RCV",
+      "PORT-2-3-LINEIN:OTS:NEND:RCV",
+      "PORT-2-3-LINEOUT-9172.500:OCH:NEND:TRMT",
+      "PORT-2-3-LINEOUT:OTS:NEND:TRMT",
+      "PORT-2-4-LINE1OUT:OTS:NEND:TRMT",
+      "PORT-2-4-SIGC1IN:OTS:NEND:RCV",
+      "PORT-2-4-SIGC2IN:OTS:NEND:RCV",
+      "PORT-2-4-SIGL1IN:OTS:NEND:RCV",
+      "PORT-2-4-SIGL2IN:OTS:NEND:RCV",
+      "PORT-2-5-LINEIN-9142.500:OCH:NEND:RCV",
+      "PORT-2-5-LINEIN-9152.500:OCH:NEND:RCV",
+      "PORT-2-5-LINEIN-9182.500:OCH:NEND:RCV",
+      "PORT-2-5-LINEIN-9192.500:OCH:NEND:RCV",
+      "PORT-2-5-LINEIN:OTS:NEND:RCV",
+      "PORT-2-5-LINEOUT-9142.500:OCH:NEND:TRMT",
+      "PORT-2-5-LINEOUT-9152.500:OCH:NEND:TRMT",
+      "PORT-2-5-LINEOUT-9182.500:OCH:NEND:TRMT",
+      "PORT-2-5-LINEOUT-9192.500:OCH:NEND:TRMT",
+      "PORT-2-5-LINEOUT:OTS:NEND:TRMT",
+      "PORT-4-13-L1:OTSI:NEND:RCV",
+      "PORT-4-13-L1:OTSI:NEND:TRMT",
+      "PORT-5-6-1:OTSI:NEND:RCV",
+      "PORT-5-6-1:OTSI:NEND:TRMT",
+      "PORT-5-6-2:OTSI:NEND:RCV",
+      "PORT-5-6-2:OTSI:NEND:TRMT"
+    ],
+    "unknown": [
+      "PORT-5-1-1:FlexClientRate:NEND:RCV",
+      "PORT-5-1-1:FlexClientRate:NEND:TRMT",
+      "PORT-5-1-2:FlexClientRate:NEND:RCV",
+      "PORT-5-1-2:FlexClientRate:NEND:TRMT",
+      "PORT-5-1-3:FlexClientRate:NEND:RCV",
+      "PORT-5-1-3:FlexClientRate:NEND:TRMT",
+      "PORT-5-28-5:FlexClientRate:NEND:RCV",
+      "PORT-5-28-5:FlexClientRate:NEND:TRMT",
+      "PORT-5-28-6:FlexClientRate:NEND:RCV",
+      "PORT-5-28-6:FlexClientRate:NEND:TRMT",
+      "PORT-5-28-7:FlexClientRate:NEND:RCV",
+      "PORT-5-28-7:FlexClientRate:NEND:TRMT"
+    ]
+  },
+  "root": "./pm_store/NE=KAMGLRKNKD2SA2T32801",
+  "tps": {
+    "OCH-4-3-C1:OTU4:NEND:RCV": {
+      "category": "OCH",
+      "role": "transponder"
+    },
+    "OCH-4-3-C1:OTU4:NEND:TRMT": {
+      "category": "OCH",
+      "role": "transponder"
+    },
+    "OCH-4-3-C2:OTU4:NEND:RCV": {
+      "category": "OCH",
+      "role": "transponder"
+    },
+    "OCH-4-3-C2:OTU4:NEND:TRMT": {
+      "category": "OCH",
+      "role": "transponder"
+    },
+    "OCH-4-3-C3:OTU4:NEND:RCV": {
+      "category": "OCH",
+      "role": "transponder"
+    },
+    "OCH-4-3-C3:OTU4:NEND:TRMT": {
+      "category": "OCH",
+      "role": "transponder"
+    },
+    "OCH-4-3-C4:OTU4:NEND:RCV": {
+      "category": "OCH",
+      "role": "transponder"
+    },
+    "OCH-4-3-C4:OTU4:NEND:TRMT": {
+      "category": "OCH",
+      "role": "transponder"
+    },
+    "OCH-4-5-C1:OTU4:NEND:RCV": {
+      "category": "OCH",
+      "role": "transponder"
+    },
+    "OCH-4-5-C1:OTU4:NEND:TRMT": {
+      "category": "OCH",
+      "role": "transponder"
+    },
+    "OCH-4-5-C2:OTU4:NEND:RCV": {
+      "category": "OCH",
+      "role": "transponder"
+    },
+    "OCH-4-5-C2:OTU4:NEND:TRMT": {
+      "category": "OCH",
+      "role": "transponder"
+    },
+    "OCH-4-5-C3:OTU4:NEND:RCV": {
+      "category": "OCH",
+      "role": "transponder"
+    },
+    "OCH-4-5-C3:OTU4:NEND:TRMT": {
+      "category": "OCH",
+      "role": "transponder"
+    },
+    "OCH-4-9-C1:OTU4:NEND:RCV": {
+      "category": "OCH",
+      "role": "transponder"
+    },
+    "OCH-4-9-C1:OTU4:NEND:TRMT": {
+      "category": "OCH",
+      "role": "transponder"
+    },
+    "OCH-4-9-C3:OTU4:NEND:RCV": {
+      "category": "OCH",
+      "role": "transponder"
+    },
+    "OCH-4-9-C3:OTU4:NEND:TRMT": {
+      "category": "OCH",
+      "role": "transponder"
+    },
+    "OCH-4-9-C4:OTU4:NEND:RCV": {
+      "category": "OCH",
+      "role": "transponder"
+    },
+    "OCH-4-9-C4:OTU4:NEND:TRMT": {
+      "category": "OCH",
+      "role": "transponder"
+    },
+    "OCH-4-9-C5:OTU4:NEND:RCV": {
+      "category": "OCH",
+      "role": "transponder"
+    },
+    "OCH-4-9-C5:OTU4:NEND:TRMT": {
+      "category": "OCH",
+      "role": "transponder"
+    },
+    "ODUFLEX-5-1-1:ODUFLEX:FEND:RCV": {
+      "category": "ODU",
+      "role": "transponder"
+    },
+    "ODUFLEX-5-1-1:ODUFLEX:NEND:RCV": {
+      "category": "ODU",
+      "role": "transponder"
+    },
+    "ODUFLEX-5-1-2:ODUFLEX:FEND:RCV": {
+      "category": "ODU",
+      "role": "transponder"
+    },
+    "ODUFLEX-5-1-2:ODUFLEX:NEND:RCV": {
+      "category": "ODU",
+      "role": "transponder"
+    },
+    "ODUFLEX-5-1-3:ODUFLEX:FEND:RCV": {
+      "category": "ODU",
+      "role": "transponder"
+    },
+    "ODUFLEX-5-1-3:ODUFLEX:NEND:RCV": {
+      "category": "ODU",
+      "role": "transponder"
+    },
+    "ODUFLEX-5-28-5:ODUFLEX:FEND:RCV": {
+      "category": "ODU",
+      "role": "transponder"
+    },
+    "ODUFLEX-5-28-5:ODUFLEX:NEND:RCV": {
+      "category": "ODU",
+      "role": "transponder"
+    },
+    "ODUFLEX-5-28-6:ODUFLEX:FEND:RCV": {
+      "category": "ODU",
+      "role": "transponder"
+    },
+    "ODUFLEX-5-28-6:ODUFLEX:NEND:RCV": {
+      "category": "ODU",
+      "role": "transponder"
+    },
+    "ODUFLEX-5-28-7:ODUFLEX:FEND:RCV": {
+      "category": "ODU",
+      "role": "transponder"
+    },
+    "ODUFLEX-5-28-7:ODUFLEX:NEND:RCV": {
+      "category": "ODU",
+      "role": "transponder"
+    },
+    "OTSI-4-3-L1:OTSI:NEND:RCV": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "OTSI-4-3-L1:OTSI:NEND:TRMT": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "OTSI-4-5-L1:OTSI:NEND:RCV": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "OTSI-4-5-L1:OTSI:NEND:TRMT": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "OTSI-4-9-L1:OTSI:NEND:RCV": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "OTSI-4-9-L1:OTSI:NEND:TRMT": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "OTSI-5-23-1:OTSI:NEND:RCV": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "OTSI-5-23-1:OTSI:NEND:TRMT": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "OTSI-5-23-2:OTSI:NEND:RCV": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "OTSI-5-23-2:OTSI:NEND:TRMT": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "OTSI-5-24-1:OTSI:NEND:RCV": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "OTSI-5-24-1:OTSI:NEND:TRMT": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "OTSI-5-24-2:OTSI:NEND:RCV": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "OTSI-5-24-2:OTSI:NEND:TRMT": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "OTSI-5-26-1:OTSI:NEND:RCV": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "OTSI-5-26-1:OTSI:NEND:TRMT": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "OTSI-5-26-2:OTSI:NEND:RCV": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "OTSI-5-26-2:OTSI:NEND:TRMT": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "OTSI-5-4-1:OTSI:NEND:RCV": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "OTSI-5-4-1:OTSI:NEND:TRMT": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "OTSI-5-4-2:OTSI:NEND:RCV": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "OTSI-5-4-2:OTSI:NEND:TRMT": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "OTSI-5-5-1:OTSI:NEND:RCV": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "OTSI-5-5-1:OTSI:NEND:TRMT": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "OTSI-5-5-2:OTSI:NEND:RCV": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "OTSI-5-5-2:OTSI:NEND:TRMT": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "OTU-4-3-1:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-4-3-1:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-4-3-2:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-4-3-2:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-4-3-3:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-4-3-3:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-4-3-4:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-4-3-4:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-4-3-C1-1:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-4-3-C1-1:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-4-3-C2-1:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-4-3-C2-1:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-4-3-C3-1:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-4-3-C3-1:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-4-3-C4-1:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-4-3-C4-1:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-4-5-1:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-4-5-1:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-4-5-2:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-4-5-2:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-4-5-3:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-4-5-3:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-4-5-4:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-4-5-4:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-4-5-C1-1:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-4-5-C1-1:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-4-5-C2-1:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-4-5-C2-1:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-4-5-C3-1:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-4-5-C3-1:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-4-9-1:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-4-9-1:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-4-9-2:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-4-9-2:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-4-9-3:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-4-9-3:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-4-9-4:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-4-9-4:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-4-9-C1-1:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-4-9-C1-1:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-4-9-C3-1:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-4-9-C3-1:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-4-9-C4-1:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-4-9-C4-1:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-4-9-C5-1:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-4-9-C5-1:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-23-1:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-23-1:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-23-2:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-23-2:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-23-3:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-23-3:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-23-4:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-23-4:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-23-6:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-23-6:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-23-7:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-23-7:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-23-8:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-23-8:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-23-9:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-23-9:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-24-1:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-24-1:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-24-2:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-24-2:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-24-3:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-24-3:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-24-4:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-24-4:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-24-6:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-24-6:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-24-7:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-24-7:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-24-8:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-24-8:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-24-9:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-24-9:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-26-1:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-26-1:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-26-2:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-26-2:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-26-3:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-26-3:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-26-4:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-26-4:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-26-6:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-26-6:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-26-7:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-26-7:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-26-8:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-26-8:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-26-9:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-26-9:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-4-1:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-4-1:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-4-2:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-4-2:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-4-3:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-4-3:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-4-4:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-4-4:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-4-6:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-4-6:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-4-7:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-4-7:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-4-8:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-4-8:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-4-9:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-4-9:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-5-1:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-5-1:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-5-2:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-5-2:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-5-3:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-5-3:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-5-4:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-5-4:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-5-6:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-5-6:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-5-7:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-5-7:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-5-8:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-5-8:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-5-9:OTU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTU-5-5-9:OTU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTUODU4-4-3-C1-1-1:ODU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTUODU4-4-3-C1-1-1:ODU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTUODU4-4-3-C2-1-1:ODU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTUODU4-4-3-C2-1-1:ODU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTUODU4-4-3-C3-1-1:ODU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTUODU4-4-3-C3-1-1:ODU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTUODU4-4-3-C4-1-1:ODU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTUODU4-4-3-C4-1-1:ODU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTUODU4-4-5-C1-1-1:ODU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTUODU4-4-5-C1-1-1:ODU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTUODU4-4-5-C2-1-1:ODU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTUODU4-4-5-C2-1-1:ODU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTUODU4-4-5-C3-1-1:ODU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTUODU4-4-5-C3-1-1:ODU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTUODU4-4-9-C1-1-1:ODU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTUODU4-4-9-C1-1-1:ODU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTUODU4-4-9-C3-1-1:ODU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTUODU4-4-9-C3-1-1:ODU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTUODU4-4-9-C4-1-1:ODU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTUODU4-4-9-C4-1-1:ODU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTUODU4-4-9-C5-1-1:ODU4:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTUODU4-4-9-C5-1-1:ODU4:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTUODU4TCM-5-23-1-6-BM:odu4tcm:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTUODU4TCM-5-23-1-6-BM:odu4tcm:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTUODU4TCM-5-23-6-6-BM:odu4tcm:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTUODU4TCM-5-23-6-6-BM:odu4tcm:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTUODU4TCM-5-26-1-6-BM:odu4tcm:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTUODU4TCM-5-26-1-6-BM:odu4tcm:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTUODU4TCM-5-26-6-6-BM:odu4tcm:FEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "OTUODU4TCM-5-26-6-6-BM:odu4tcm:NEND:RCV": {
+      "category": "OTU",
+      "role": "transponder"
+    },
+    "PORT-1-2-LINE1OUT:OTS:NEND:TRMT": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "PORT-1-2-OSCSFP1:OTS:FEND:RCV": {
+      "category": "OTS",
+      "role": "osc"
+    },
+    "PORT-1-2-OSCSFP1:OTS:NEND:RCV": {
+      "category": "OTS",
+      "role": "osc"
+    },
+    "PORT-1-2-OSCSFP1:OTS:NEND:TRMT": {
+      "category": "OTS",
+      "role": "osc"
+    },
+    "PORT-1-2-SIGC1IN:OTS:NEND:RCV": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "PORT-1-2-SIGC2IN:OTS:NEND:RCV": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "PORT-1-2-SIGL1IN:OTS:NEND:RCV": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "PORT-1-2-SIGL2IN:OTS:NEND:RCV": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "PORT-1-3-LINEIN:OTS:NEND:RCV": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "PORT-1-3-LINEOUT:OTS:NEND:TRMT": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "PORT-2-2-LINE1OUT:OTS:NEND:TRMT": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "PORT-2-2-OSCSFP1:OTS:FEND:RCV": {
+      "category": "OTS",
+      "role": "osc"
+    },
+    "PORT-2-2-OSCSFP1:OTS:NEND:RCV": {
+      "category": "OTS",
+      "role": "osc"
+    },
+    "PORT-2-2-OSCSFP1:OTS:NEND:TRMT": {
+      "category": "OTS",
+      "role": "osc"
+    },
+    "PORT-2-2-SIGC1IN:OTS:NEND:RCV": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "PORT-2-2-SIGC2IN:OTS:NEND:RCV": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "PORT-2-2-SIGL1IN:OTS:NEND:RCV": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "PORT-2-2-SIGL2IN:OTS:NEND:RCV": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "PORT-2-3-LINEIN-9172.500:OCH:NEND:RCV": {
+      "category": "OCH",
+      "role": "transponder"
+    },
+    "PORT-2-3-LINEIN:OTS:NEND:RCV": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "PORT-2-3-LINEOUT-9172.500:OCH:NEND:TRMT": {
+      "category": "OCH",
+      "role": "transponder"
+    },
+    "PORT-2-3-LINEOUT:OTS:NEND:TRMT": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "PORT-2-4-LINE1OUT:OTS:NEND:TRMT": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "PORT-2-4-OSCSFP1:OTS:FEND:RCV": {
+      "category": "OTS",
+      "role": "osc"
+    },
+    "PORT-2-4-OSCSFP1:OTS:NEND:RCV": {
+      "category": "OTS",
+      "role": "osc"
+    },
+    "PORT-2-4-OSCSFP1:OTS:NEND:TRMT": {
+      "category": "OTS",
+      "role": "osc"
+    },
+    "PORT-2-4-SIGC1IN:OTS:NEND:RCV": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "PORT-2-4-SIGC2IN:OTS:NEND:RCV": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "PORT-2-4-SIGL1IN:OTS:NEND:RCV": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "PORT-2-4-SIGL2IN:OTS:NEND:RCV": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "PORT-2-5-LINEIN-9142.500:OCH:NEND:RCV": {
+      "category": "OCH",
+      "role": "transponder"
+    },
+    "PORT-2-5-LINEIN-9152.500:OCH:NEND:RCV": {
+      "category": "OCH",
+      "role": "transponder"
+    },
+    "PORT-2-5-LINEIN-9182.500:OCH:NEND:RCV": {
+      "category": "OCH",
+      "role": "transponder"
+    },
+    "PORT-2-5-LINEIN-9192.500:OCH:NEND:RCV": {
+      "category": "OCH",
+      "role": "transponder"
+    },
+    "PORT-2-5-LINEIN:OTS:NEND:RCV": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "PORT-2-5-LINEOUT-9142.500:OCH:NEND:TRMT": {
+      "category": "OCH",
+      "role": "transponder"
+    },
+    "PORT-2-5-LINEOUT-9152.500:OCH:NEND:TRMT": {
+      "category": "OCH",
+      "role": "transponder"
+    },
+    "PORT-2-5-LINEOUT-9182.500:OCH:NEND:TRMT": {
+      "category": "OCH",
+      "role": "transponder"
+    },
+    "PORT-2-5-LINEOUT-9192.500:OCH:NEND:TRMT": {
+      "category": "OCH",
+      "role": "transponder"
+    },
+    "PORT-2-5-LINEOUT:OTS:NEND:TRMT": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "PORT-4-13-L1:OTSI:NEND:RCV": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "PORT-4-13-L1:OTSI:NEND:TRMT": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "PORT-5-1-1:FlexClientRate:NEND:RCV": {
+      "category": "OTHER",
+      "role": "unknown"
+    },
+    "PORT-5-1-1:FlexClientRate:NEND:TRMT": {
+      "category": "OTHER",
+      "role": "unknown"
+    },
+    "PORT-5-1-2:FlexClientRate:NEND:RCV": {
+      "category": "OTHER",
+      "role": "unknown"
+    },
+    "PORT-5-1-2:FlexClientRate:NEND:TRMT": {
+      "category": "OTHER",
+      "role": "unknown"
+    },
+    "PORT-5-1-3:FlexClientRate:NEND:RCV": {
+      "category": "OTHER",
+      "role": "unknown"
+    },
+    "PORT-5-1-3:FlexClientRate:NEND:TRMT": {
+      "category": "OTHER",
+      "role": "unknown"
+    },
+    "PORT-5-28-5:FlexClientRate:NEND:RCV": {
+      "category": "OTHER",
+      "role": "unknown"
+    },
+    "PORT-5-28-5:FlexClientRate:NEND:TRMT": {
+      "category": "OTHER",
+      "role": "unknown"
+    },
+    "PORT-5-28-6:FlexClientRate:NEND:RCV": {
+      "category": "OTHER",
+      "role": "unknown"
+    },
+    "PORT-5-28-6:FlexClientRate:NEND:TRMT": {
+      "category": "OTHER",
+      "role": "unknown"
+    },
+    "PORT-5-28-7:FlexClientRate:NEND:RCV": {
+      "category": "OTHER",
+      "role": "unknown"
+    },
+    "PORT-5-28-7:FlexClientRate:NEND:TRMT": {
+      "category": "OTHER",
+      "role": "unknown"
+    },
+    "PORT-5-6-1:OTSI:NEND:RCV": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "PORT-5-6-1:OTSI:NEND:TRMT": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "PORT-5-6-2:OTSI:NEND:RCV": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "PORT-5-6-2:OTSI:NEND:TRMT": {
+      "category": "OTS",
+      "role": "transponder"
+    }
+  }
+}

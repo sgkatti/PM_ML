@@ -1,0 +1,163 @@
+{
+  "categories": {
+    "OCH": [
+      "PORT-1-3-LINEIN-9162.500:OCH:NEND:RCV",
+      "PORT-1-3-LINEIN-9172.500:OCH:NEND:RCV",
+      "PORT-1-3-LINEOUT-9162.500:OCH:NEND:TRMT",
+      "PORT-1-3-LINEOUT-9172.500:OCH:NEND:TRMT",
+      "PORT-1-4-LINEIN-9162.500:OCH:NEND:RCV",
+      "PORT-1-4-LINEIN-9172.500:OCH:NEND:RCV",
+      "PORT-1-4-LINEOUT-9162.500:OCH:NEND:TRMT",
+      "PORT-1-4-LINEOUT-9172.500:OCH:NEND:TRMT"
+    ],
+    "OTS": [
+      "PORT-1-3-LINEIN:OTS:NEND:RCV",
+      "PORT-1-3-LINEOUT:OTS:NEND:TRMT",
+      "PORT-1-4-LINEIN:OTS:NEND:RCV",
+      "PORT-1-4-LINEOUT:OTS:NEND:TRMT",
+      "PORT-1-5-LINE1OUT:OTS:NEND:TRMT",
+      "PORT-1-5-LINE2OUT:OTS:NEND:TRMT",
+      "PORT-1-5-OSCSFP1:OTS:FEND:RCV",
+      "PORT-1-5-OSCSFP1:OTS:NEND:RCV",
+      "PORT-1-5-OSCSFP1:OTS:NEND:TRMT",
+      "PORT-1-5-OSCSFP2:OTS:FEND:RCV",
+      "PORT-1-5-OSCSFP2:OTS:NEND:RCV",
+      "PORT-1-5-OSCSFP2:OTS:NEND:TRMT",
+      "PORT-1-5-SIGC1IN:OTS:NEND:RCV",
+      "PORT-1-5-SIGC2IN:OTS:NEND:RCV",
+      "PORT-1-5-SIGL1IN:OTS:NEND:RCV",
+      "PORT-1-5-SIGL2IN:OTS:NEND:RCV"
+    ]
+  },
+  "generated_at": "2025-11-27T18:12:38Z",
+  "ne": "UEMHOBKSTI1NA1G08801",
+  "roles": {
+    "osc": [
+      "PORT-1-5-OSCSFP1:OTS:FEND:RCV",
+      "PORT-1-5-OSCSFP1:OTS:NEND:RCV",
+      "PORT-1-5-OSCSFP1:OTS:NEND:TRMT",
+      "PORT-1-5-OSCSFP2:OTS:FEND:RCV",
+      "PORT-1-5-OSCSFP2:OTS:NEND:RCV",
+      "PORT-1-5-OSCSFP2:OTS:NEND:TRMT"
+    ],
+    "transponder": [
+      "PORT-1-3-LINEIN-9162.500:OCH:NEND:RCV",
+      "PORT-1-3-LINEIN-9172.500:OCH:NEND:RCV",
+      "PORT-1-3-LINEIN:OTS:NEND:RCV",
+      "PORT-1-3-LINEOUT-9162.500:OCH:NEND:TRMT",
+      "PORT-1-3-LINEOUT-9172.500:OCH:NEND:TRMT",
+      "PORT-1-3-LINEOUT:OTS:NEND:TRMT",
+      "PORT-1-4-LINEIN-9162.500:OCH:NEND:RCV",
+      "PORT-1-4-LINEIN-9172.500:OCH:NEND:RCV",
+      "PORT-1-4-LINEIN:OTS:NEND:RCV",
+      "PORT-1-4-LINEOUT-9162.500:OCH:NEND:TRMT",
+      "PORT-1-4-LINEOUT-9172.500:OCH:NEND:TRMT",
+      "PORT-1-4-LINEOUT:OTS:NEND:TRMT",
+      "PORT-1-5-LINE1OUT:OTS:NEND:TRMT",
+      "PORT-1-5-LINE2OUT:OTS:NEND:TRMT",
+      "PORT-1-5-SIGC1IN:OTS:NEND:RCV",
+      "PORT-1-5-SIGC2IN:OTS:NEND:RCV",
+      "PORT-1-5-SIGL1IN:OTS:NEND:RCV",
+      "PORT-1-5-SIGL2IN:OTS:NEND:RCV"
+    ]
+  },
+  "root": "./pm_store/NE=UEMHOBKSTI1NA1G08801",
+  "tps": {
+    "PORT-1-3-LINEIN-9162.500:OCH:NEND:RCV": {
+      "category": "OCH",
+      "role": "transponder"
+    },
+    "PORT-1-3-LINEIN-9172.500:OCH:NEND:RCV": {
+      "category": "OCH",
+      "role": "transponder"
+    },
+    "PORT-1-3-LINEIN:OTS:NEND:RCV": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "PORT-1-3-LINEOUT-9162.500:OCH:NEND:TRMT": {
+      "category": "OCH",
+      "role": "transponder"
+    },
+    "PORT-1-3-LINEOUT-9172.500:OCH:NEND:TRMT": {
+      "category": "OCH",
+      "role": "transponder"
+    },
+    "PORT-1-3-LINEOUT:OTS:NEND:TRMT": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "PORT-1-4-LINEIN-9162.500:OCH:NEND:RCV": {
+      "category": "OCH",
+      "role": "transponder"
+    },
+    "PORT-1-4-LINEIN-9172.500:OCH:NEND:RCV": {
+      "category": "OCH",
+      "role": "transponder"
+    },
+    "PORT-1-4-LINEIN:OTS:NEND:RCV": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "PORT-1-4-LINEOUT-9162.500:OCH:NEND:TRMT": {
+      "category": "OCH",
+      "role": "transponder"
+    },
+    "PORT-1-4-LINEOUT-9172.500:OCH:NEND:TRMT": {
+      "category": "OCH",
+      "role": "transponder"
+    },
+    "PORT-1-4-LINEOUT:OTS:NEND:TRMT": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "PORT-1-5-LINE1OUT:OTS:NEND:TRMT": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "PORT-1-5-LINE2OUT:OTS:NEND:TRMT": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "PORT-1-5-OSCSFP1:OTS:FEND:RCV": {
+      "category": "OTS",
+      "role": "osc"
+    },
+    "PORT-1-5-OSCSFP1:OTS:NEND:RCV": {
+      "category": "OTS",
+      "role": "osc"
+    },
+    "PORT-1-5-OSCSFP1:OTS:NEND:TRMT": {
+      "category": "OTS",
+      "role": "osc"
+    },
+    "PORT-1-5-OSCSFP2:OTS:FEND:RCV": {
+      "category": "OTS",
+      "role": "osc"
+    },
+    "PORT-1-5-OSCSFP2:OTS:NEND:RCV": {
+      "category": "OTS",
+      "role": "osc"
+    },
+    "PORT-1-5-OSCSFP2:OTS:NEND:TRMT": {
+      "category": "OTS",
+      "role": "osc"
+    },
+    "PORT-1-5-SIGC1IN:OTS:NEND:RCV": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "PORT-1-5-SIGC2IN:OTS:NEND:RCV": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "PORT-1-5-SIGL1IN:OTS:NEND:RCV": {
+      "category": "OTS",
+      "role": "transponder"
+    },
+    "PORT-1-5-SIGL2IN:OTS:NEND:RCV": {
+      "category": "OTS",
+      "role": "transponder"
+    }
+  }
+}
