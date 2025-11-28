@@ -2,7 +2,7 @@ import polars as pl
 import glob
 import os
 
-DATA_ROOT = "pm_data"
+DATA_ROOT = "/workspaces/PM_ML/pm_data"
 
 def list_nodes():
     nodes = [p.split("node=")[-1] for p in glob.glob(f"{DATA_ROOT}/node=*")]
