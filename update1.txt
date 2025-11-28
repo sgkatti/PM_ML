@@ -1,0 +1,61 @@
+# --- RULE 1: Replace the existing line chart for KPI with a Candle/Range Band ---
+FIND: fig = px.line(
+REPLACE: 
+# -----------------------------
+# NEW HIGH/LOW RANGE PLOT ENGINE
+# -----------------------------
+import plotly.graph_objects as go
+
+# Expect that df_plot has columns: Time, <KPI>_High, <KPI>_Low
+kpi_high = f"{k}_High"
+kpi_low  = f"{k}_Low"
+
+# Safety check
+if kpi_high in df_plot.columns and kpi_low in df_plot.columns:
+
+    fig = go.Figure()
+
+    # High line
+    fig.add_trace(go.Scatter(
+        x=df_plot["Time"],
+        y=df_plot[kpi_high],
+        mode='lines',
+        name=f"{k} High",
+        line=dict(width=1.2)
+    ))
+
+    # Low line
+    fig.add_trace(go.Scatter(
+        x=df_plot["Time"],
+        y=df_plot[kpi_low],
+        mode='lines',
+        name=f"{k} Low",
+        line=dict(width=1.2)
+    ))
+
+    # Candle-style band (range)
+    fig.add_trace(go.Scatter(
+        x=pd.concat([df_plot["Time"], df_plot["Time"][::-1]]),
+        y=pd.concat([df_plot[kpi_high], df_plot[kpi_low][::-1]]),
+        fill='toself',
+        fillcolor='rgba(0, 150, 255, 0.15)',
+        line=dict(color='rgba(255,255,255,0)'),
+        hoverinfo='skip',
+        name=f"{k} High–Low Range"
+    ))
+
+    fig.update_layout(
+        title=f"{k} High/Low Range — TP: {tp_selected}",
+        yaxis_title=k,
+        xaxis_title="Time"
+    )
+
+else:
+    fig = px.line(
+        df_plot,
+        x="Time",
+        y=k,
+        title=f"{k} over time — TP: {tp_selected}",
+        height=350,
+        markers=True
+    )

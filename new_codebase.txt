@@ -1,0 +1,124 @@
+#MODULE: app.py
+import streamlit as st
+from loader import load_pm_data, list_nodes, list_tps
+from plotter import plot_kpi_range, plot_basic_line
+from config import KPI_MAP
+
+st.set_page_config(page_title="PM Dashboard vNext", layout="wide")
+
+st.title("📡 PM Telemetry Dashboard — ByteBaby vNext")
+
+node = st.selectbox("Node", list_nodes())
+tp = st.selectbox("TP / Interface", list_tps(node))
+
+df = load_pm_data(node, tp)
+
+if df is None or df.empty:
+    st.warning("No PM data found.")
+    st.stop()
+
+kpi = st.selectbox("Select KPI", list(KPI_MAP.keys()))
+kmap = KPI_MAP[kpi]
+
+has_high = kmap["high"] in df.columns
+has_low  = kmap["low"] in df.columns
+
+if has_high and has_low:
+    fig = plot_kpi_range(df, kpi, kmap["high"], kmap["low"])
+else:
+    fig = plot_basic_line(df, kpi)
+
+st.plotly_chart(fig, use_container_width=True)
+
+
+#MODULE: loader.py
+import polars as pl
+import glob
+import os
+
+DATA_ROOT = "pm_data"
+
+def list_nodes():
+    nodes = [p.split("node=")[-1] for p in glob.glob(f"{DATA_ROOT}/node=*")]
+    return sorted(nodes)
+
+def list_tps(node):
+    pattern = f"{DATA_ROOT}/node={node}/year=*/month=*/day=*/*.parquet"
+    files = glob.glob(pattern)
+    if not files:
+        return []
+    df = pl.scan_parquet(files).collect()
+    return sorted(df["TP"].unique().to_list()) if "TP" in df.columns else []
+
+def load_pm_data(node, tp):
+    pattern = f"{DATA_ROOT}/node={node}/year=*/month=*/day=*/*.parquet"
+    files = glob.glob(pattern)
+    if not files:
+        return None
+    df = pl.scan_parquet(files).filter(pl.col("TP") == tp).collect()
+    return df.to_pandas()
+
+
+#MODULE: plotter.py
+import plotly.graph_objects as go
+import plotly.express as px
+import pandas as pd
+
+def plot_kpi_range(df, kpi, high, low):
+    fig = go.Figure()
+
+    fig.add_trace(go.Scatter(
+        x=df["Time"], y=df[high],
+        mode="lines",
+        name=f"{kpi} High", line=dict(width=1.2)
+    ))
+    fig.add_trace(go.Scatter(
+        x=df["Time"], y=df[low],
+        mode="lines",
+        name=f"{kpi} Low", line=dict(width=1.2)
+    ))
+
+    fig.add_trace(go.Scatter(
+        x=pd.concat([df["Time"], df["Time"][::-1]]),
+        y=pd.concat([df[high], df[low][::-1]]),
+        fill="toself",
+        fillcolor="rgba(0,150,255,0.15)",
+        line=dict(color="rgba(0,0,0,0)"),
+        hoverinfo="skip",
+        name=f"{kpi} Range"
+    ))
+
+    fig.update_layout(title=f"{kpi} High–Low Range")
+    return fig
+
+def plot_basic_line(df, kpi):
+    return px.line(df, x="Time", y=kpi, title=f"{kpi} over Time")
+
+
+#MODULE: config.py
+KPI_MAP = {
+    "PreFEC_BER": {
+        "high": "PreFEC_BER_High",
+        "low":  "PreFEC_BER_Low",
+        "avg":  "PreFEC_BER_Avg"
+    },
+    "Q_Margin": {
+        "high": "Q_High",
+        "low":  "Q_Low",
+        "avg":  "Q_Avg"
+    },
+    # Add more KPIs here later
+}
+
+
+#MODULE: utils.py
+def safe_get(df, col):
+    return df[col] if col in df else None
+
+
+#MODULE: ml_engine.py
+def train_model(df):
+    return None
+
+def predict(df):
+    return None

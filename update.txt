@@ -1,0 +1,7 @@
+# --- RULE 1: DROP PROJECT COLUMN ---
+FIND: df = df.drop(columns=["Project"])
+REPLACE: # Dropping Project column\nif "Project" in df.columns:\n    df = df.drop(columns=["Project"])
+
+# --- RULE 2: MOVE NODE COLUMN TO FIRST POSITION ---
+FIND: validated.to_excel(writer, sheet_name="Validated_Inventory", index=False)
+REPLACE: # Reorder columns so Node becomes the first column\ncols = validated.columns.tolist()\nif "Node" in cols:\n    cols.insert(0, cols.pop(cols.index("Node")))\nvalidated = validated[cols]\n\nvalidated.to_excel(writer, sheet_name="Validated_Inventory", index=False)
