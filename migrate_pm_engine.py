@@ -2,65 +2,105 @@ import os
 import shutil
 import glob
 import pandas as pd
+import re
 from datetime import datetime
 
 # ------------------------------------------------------------
-# CONFIG — You can modify these names/folders anytime
+# CONFIG: You can modify these paths anytime
 # ------------------------------------------------------------
 
-RAW_PM_DATA_DIR = "pm_raw_data"             # Folder where old PM files are
-TARGET_PM_DATA_DIR = "pm_data"              # New folder where partitioned data goes
-NEW_CODEBASE_FILE = "new_codebase.txt"      # File containing new modules
-TARGET_CODEBASE_DIR = "pm_dashboard"        # Folder where new modules will be created
+RAW_PM_DATA_DIR = "PM_Files"             # Existing raw PM folder
+TARGET_PM_DATA_DIR = "pm_data"              # New partitioned data folder
+NEW_CODEBASE_FILE = "new_codebase.txt"      # File containing code modules
+TARGET_CODEBASE_DIR = "pm_dashboard"        # Folder for generated codebase
 
-SUPPORTED_EXT = [".parquet", ".csv"]        # Allowed PM data formats
+SUPPORTED_EXT = [".csv", ".parquet"]        # Supported PM formats
 
 
 # ------------------------------------------------------------
-# UTILS
+# UTILITIES
 # ------------------------------------------------------------
 
 def ensure_dir(path):
     if not os.path.exists(path):
         os.makedirs(path)
 
-def extract_node(fname):
-    """Extract node name from filename BEFORE first underscore."""
-    base = os.path.basename(fname)
-    return base.split("_")[0]
 
 def extract_date(fname):
-    """Extract date YYYYMMDD from filename AFTER underscore."""
+    """
+    Extract YYYYMMDD from ANY filename segment.
+    Works for filenames like:
+      15mins_All_NE_20251106_103000.csv
+      PM_AGRA01_20240718.csv
+    """
     base = os.path.basename(fname)
+    tokens = base.split("_")
+
+    for t in tokens:
+        if re.match(r"^\d{8}$", t):
+            try:
+                return datetime.strptime(t, "%Y%m%d")
+            except:
+                continue
+    return None
+
+
+def extract_node_from_csv(fname):
+    """
+    Extract NE name by reading only 1 row of CSV.
+    Vendor-independent.
+    Searches for common PM columns:
+      NE, Node, NodeName, NetworkElement
+    """
     try:
-        parts = base.split("_")
-        date_str = parts[1].split(".")[0]
-        dt = datetime.strptime(date_str, "%Y%m%d")
-        return dt
+        df = pd.read_csv(fname, nrows=1)
+        for col in ["NE", "Node", "NodeName", "NetworkElement"]:
+            if col in df.columns:
+                return str(df[col].iloc[0]).strip()
+    except Exception as e:
+        print(f"⚠ Could not read CSV for NE: {fname} — {e}")
+
+    return "UNKNOWN"
+
+
+def extract_node_from_parquet(fname):
+    """Fallback for parquet if they have NE column."""
+    try:
+        df = pd.read_parquet(fname, columns=["NE"])
+        return str(df["NE"].iloc[0]).strip()
     except:
-        return None
+        return "UNKNOWN"
 
 
 # ------------------------------------------------------------
-# PART 1: PM DATA MIGRATION
+# PART 1: MIGRATE PM DATA → PARTITIONED STRUCTURE
 # ------------------------------------------------------------
 
 def migrate_pm_data():
     print("\n🚀 Migrating PM Files...")
 
-    # Collect raw files
+    # Gather files
     files = []
     for ext in SUPPORTED_EXT:
-        files.extend(glob.glob(f"{RAW_PM_DATA_DIR}/*{ext}"))
+        files.extend(glob.glob(os.path.join(RAW_PM_DATA_DIR, f"*{ext}")))
 
     print(f"Found {len(files)} raw PM files.")
 
     if not files:
-        print("⚠ No files found. Migration skipped.")
+        print("⚠ No PM files found. Migration aborted.")
         return
 
     for f in files:
-        node = extract_node(f)
+
+        # Determine Node name
+        if f.endswith(".csv"):
+            node = extract_node_from_csv(f)
+        elif f.endswith(".parquet"):
+            node = extract_node_from_parquet(f)
+        else:
+            node = "UNKNOWN"
+
+        # Extract date
         dt = extract_date(f)
 
         if not dt:
@@ -71,7 +111,7 @@ def migrate_pm_data():
         month = dt.strftime("%m")
         day = dt.strftime("%d")
 
-        # Build partitioned folder path
+        # Build new folder
         new_dir = os.path.join(
             TARGET_PM_DATA_DIR,
             f"node={node}",
@@ -81,24 +121,25 @@ def migrate_pm_data():
         )
         ensure_dir(new_dir)
 
-        # Copy file into partition
+        # Copy file
         dest = os.path.join(new_dir, os.path.basename(f))
         shutil.copy2(f, dest)
 
         print(f"✔ {f} → {dest}")
 
     print("🎉 PM Data Migration Completed!")
+    print("-" * 60)
 
 
 # ------------------------------------------------------------
-# PART 2: CODE GENERATION FROM new_codebase.txt
+# PART 2: GENERATE NEW PM DASHBOARD CODEBASE
 # ------------------------------------------------------------
 
 def generate_codebase():
     print("\n🛠 Generating New PM Dashboard Codebase...")
 
     if not os.path.exists(NEW_CODEBASE_FILE):
-        print(f"❌ new_codebase.txt not found in current folder!")
+        print(f"❌ Missing {NEW_CODEBASE_FILE}. Cannot generate modules.")
         return
 
     ensure_dir(TARGET_CODEBASE_DIR)
@@ -106,31 +147,32 @@ def generate_codebase():
     with open(NEW_CODEBASE_FILE, "r", encoding="utf-8") as f:
         contents = f.read()
 
-    # Check for modular split markers
+    # Split using module markers
     if "#MODULE:" in contents:
-        segments = contents.split("#MODULE:")
-        for block in segments[1:]:
-            header, *body = block.split("\n", 1)
+        blocks = contents.split("#MODULE:")
+        for b in blocks[1:]:
+            header, *body = b.split("\n", 1)
             module_name = header.strip()
             module_path = os.path.join(TARGET_CODEBASE_DIR, module_name)
 
             with open(module_path, "w", encoding="utf-8") as out:
                 out.write(body[0])
 
-            print(f"✔ Generated module: {module_path}")
+            print(f"✔ Created module: {module_path}")
 
     else:
-        # Fallback: write as single file
+        # Write everything to a single file
         out_file = os.path.join(TARGET_CODEBASE_DIR, "generated_app.py")
         with open(out_file, "w", encoding="utf-8") as out:
             out.write(contents)
-        print(f"✔ New dashboard code generated: {out_file}")
+        print(f"✔ generated_app.py created")
 
     print("🎉 Code Generation Completed!")
+    print("-" * 60)
 
 
 # ------------------------------------------------------------
-# MAIN
+# MAIN ENTRY
 # ------------------------------------------------------------
 
 def main():
@@ -141,7 +183,8 @@ def main():
     migrate_pm_data()
     generate_codebase()
 
-    print("\n✨ Migration Complete. New PM Dashboard Ready!")
+    print("\n✨ Migration Finished Successfully!")
+    print("   New PM Dashboard Ready in pm_dashboard/")
     print("   Old tool remains untouched.")
     print("============================================\n")
 
